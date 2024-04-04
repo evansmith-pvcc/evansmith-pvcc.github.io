@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title> Chapter 5 Overview </title>
+    <style>
+        body{background-color: #1B073B; font-family:unset;background-image:url('wp-programming.png')}
+        table{color: #292929; background-color: rgba(145, 159, 148, 0.945); margin: auto;border-color: black;}
+    </style>
+</head>
+
+<body>
+    <table border = "2" style="font-size:x-large; width:60%;">
+
+        <tr style="background-color: #7D918E;">
+            <td><a href="index.html">Home</a></td>
+            <td><a href="https://www.pvcc.edu">PVCC</a></td>
+            <td><a href="https://www.w3schools.com/html/">W3 Schools</a></td>
+            <td><a href="contactus.html">Contact Us</a></td>
+        </tr>
+<tr> 
+    <td colspan="4"><h3>Chapter 5: Programming Algorithms & Software Testing</h3>
+
+        <h4>Phases of computer program development:</h4>
+            <ol>
+                <li>Understand the problem</li>
+                <li>Design an algorithm to solve the problem</li>
+                <li>Write the program code in appropriate language based on the algorithm</li>
+                <li>Enter the program and save</li>
+                <li>Execute the program</li>
+                <li>Test the program, find errors and debug, then retest</li>
+                <li>Document and evaluate the program</li>
+            </ol>
+
+        <h4>Programming structures:</h4>
+            <ul>
+                <li>Sequential structure: Top-down execution</li>
+                <li>Decision structures: if/then/else</li>
+                <li>Iterative (Looping):</li>
+                    <ul>
+                    <li>while loop: continue looping as long something is true</li>
+                    <li>repeat/until loop: continue looping until something is true</li>
+                    <li>for loop: loop a given number of times</li>
+                    </ul>
+                <li>Recursive structures:</li>
+                    <ul>
+                        <li>Repeat a set of instructions as a subtask of itself</li>
+                        <li>Repetition continues until: Degenerative case, which is a termination condition, is met (degenerative case is also called a "base case")</li>
+                    </ul>
+            </ul>
+
+        <h4>Two classic programmng/database problems</h4>
+            <ul>
+                <li>Sorting: Descending order/Ascending order</li>
+                    <ul>
+                        <li>Sorting numbers</li>
+                        <li>Sorting strings (in accordance with ASCII values)</li>
+                    </ul>
+                <li>Searching: find specific data that meet a certain criteria</li>
+                    <ul>
+                        <li>In database:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Filters: temporary search</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Queries: search criteria are saved so they don't have to be recreated</li>
+                    </ul>
+                <li>Two popular search techniques:</li>
+                    <ul>
+                        <li>Sequential search:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">search from top to bottom or bottom to top, one item at a time</li>
+                        <li>Binary search:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">only works if data is SORTED first start in the middle, then go to half of that, etc.</li>
+                    </ul>
+            </ul>
+
+        <h4>Two classic program goals:</h4>
+            <ul>
+            <li>Efficiency: Program takes minimal time and/or resources</li>
+            <li>Correctness: Program runs in expected ways and works for all expected conditions</li>
+            </ul>
+
+            <h4>Software testing and verification</h4>
+            <ul>
+                <li>Kinds of tests:
+                    <ul>
+                        <li>Acceptance testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Ensures the system's readiness for real-world use.</li>
+                        <li>Integration testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Focuses on determining the correctness of interactions between integrated units.</li>
+                        <li>Unit testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Aims at isolating each part of the program and showing that individual parts are correct.</li>
+                        <li>Functional testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Tests the functionalities of the software system, including user interfaces, APIs, databases, security, and all other functional aspects.</li>
+                        <li>Performance testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Ensures the software applications will perform well under their expected workload.</li>
+                        <li>Regression testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Re-running functional and non-functional tests to ensure previously developed and tested software still performs after a change.</li>
+                        <li>Stress testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Tests the system's ability to handle extreme workloads and how it recovers from failure.</li>
+                        <li>Usability testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Measures the usability, or ease of use, of a specific object or set of objects.</li>
+                    </ul>
+                </li>
+                <li>Software testing is done to detect:
+                    <ul>
+                        <li>Architectural flaws:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Identifies fundamental problems with the system's architecture that could lead to major issues down the line.</li>
+                        <li>Poor design decisions:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Highlights decisions that could negatively impact the system's effectiveness or maintainability.</li>
+                        <li>Invalid or incorrect functionality:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Checks for functions that fail to perform their intended tasks correctly.</li>
+                        <li>Security vulnerabilities:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Identifies potential threats to the software's security, aiming to protect data and prevent breaches.</li>
+                        <li>Scalability issues:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Assesses the software's capacity to expand and accommodate growth without performance degradation.</li>
+                    </ul>
+                </li>
+                <li>Testing best practices:
+                    <ul>
+                        <li>Continuous testing:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">A practice of executing automated tests as part of the software delivery pipeline to obtain immediate feedback on the business risks associated with a software release candidate.</li>
+                        <li>Configuration management:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Involves the identification, documentation, and control of changes to the software's configuration.</li>
+                        <li>Service virtualization:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Enables testing of the application even when some components or services are not available for testing.</li>
+                        <li>Defect or "bug tracking":</li>
+                        <li style="list-style-type: none; padding-left: 3%;">A systematic approach to finding, documenting, and managing issues within the software.</li>
+                        <li>Metrics and reporting:</li>
+                        <li style="list-style-type: none; padding-left: 3%;">Involves collecting, analyzing, and reporting data to enhance decision-making processes and improve software quality.</li>
+                    </ul>
+                </li>
+            </ul>  
+        <a href="https://www.ibm.com/topics/software-testing">From: IBM What is software testing?</a>
+    </td> 
+</tr>
+</body>
+</html>
